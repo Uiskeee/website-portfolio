@@ -223,20 +223,7 @@
     color: #0d8ddb;
 }
 
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 20px 0;
-}
 
-.contact-icons a {
-    font-size: 1.5rem;
-}
-
-.contact-icons a:hover {
-    transform: scale(1.2);
-}
 
 .footer-note {
     margin-top: 20px;
