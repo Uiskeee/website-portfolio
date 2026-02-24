@@ -1,7 +1,17 @@
 /* HERO */
 .hero {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    padding: 140px 20px 100px 20px;
+    min-height: 100vh;
+    padding-top: 70px; /* adjust to navbar height */
 }
 
 .hero h1 {
@@ -17,6 +27,48 @@
     opacity: 0.8;
 }
 
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+    animation: fade 15s infinite;
+    filter: brightness(0.6);
+}
+.hero-bg img:nth-child(1) { animation-delay: 0s; }
+.hero-bg img:nth-child(2) { animation-delay: 5s; }
+.hero-bg img:nth-child(3) { animation-delay: 10s; }
+
+@keyframes fade {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 2;
+}
 
 .btn {
     display: inline-block;
@@ -67,7 +119,6 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* IMAGE FIX */
 .project-card img {
     width: 100%;
     height: 220px;
@@ -180,7 +231,7 @@
 }
 
 .contact-icons a {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .contact-icons a:hover {
@@ -194,64 +245,3 @@
 }
 
 
-/* RESPONSIVE DESIGN */
-
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 20px 40px;
-    }
-
-    .projects {
-        padding: 60px 40px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* NAVBAR STACK */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    /* HERO TEXT SMALLER */
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero {
-        padding: 100px 20px 60px;
-    }
-
-    /* PROJECT SECTION PADDING */
-    .projects {
-        padding: 40px 20px;
-    }
-
-    /* GRID FULL WIDTH */
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* CONTACT */
-    .contact {
-        padding: 60px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .hero h1 {
-        font-size: 1.8rem;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    .project-card img {
-        height: 180px;
-    }
-}

@@ -15,16 +15,25 @@ body {
 
 /* NAVBAR */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
-    padding: 25px 80px;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
     background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
 }
 
 .logo {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: #00f5d4;
 }
 
@@ -37,4 +46,68 @@ body {
 
 .navbar a:hover {
     color: #00f5d4;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+
+    .projects {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR STACK */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* HERO TEXT SMALLER */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        padding: 100px 20px 60px;
+    }
+
+    /* PROJECT SECTION PADDING */
+    .projects {
+        padding: 40px 20px;
+    }
+
+    /* GRID FULL WIDTH */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
 }
