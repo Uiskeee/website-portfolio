@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* GLOBAL */
@@ -56,6 +57,7 @@ body {
     margin-top: 20px;
     opacity: 0.8;
 }
+
 
 .btn {
     display: inline-block;
