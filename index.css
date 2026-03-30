@@ -143,13 +143,13 @@ html, body {
 }
 
 .qr-section img {
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
 }
 
 .qr-section p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ccc;
     max-width: 200px;
     line-height: 1.3;
