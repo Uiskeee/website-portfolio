@@ -369,3 +369,28 @@ html, body {
     background: rgba(255,255,255,0.05);
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1; /* puts image ABOVE text */
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .qr-section {
+        justify-content: center;
+    }
+}
