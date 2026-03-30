@@ -219,33 +219,63 @@ body {
         padding: 60px 20px;
     }
 
-    @media (max-width: 768px) {
-        .hero-content {
-            display: flex;
-            flex-direction: column !important;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 25px;
-        }
+    .hero-content {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+    }
 
-        .hero-image {
-            order: -1 !important;
-        }
+    .hero-image {
+        order: -1 !important;
+    }
 
-        .hero-text {
-            text-align: center;
-            max-width: 100%;
-        }
+    .hero-text {
+        text-align: center;
+        max-width: 100%;
+    }
 
-        .hero-image img {
-            width: 200px;
-            height: 200px;
-        }
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
 
-        .qr-section {
-            justify-content: center;
-        }
+    .qr-section {
+        justify-content: center;
+    }
+
+    .experience-card {
+        flex-direction: column;
+    }
+
+    .exp-main {
+        padding: 20px;
+    }
+
+    .exp-side {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .company-logo {
+        width: 120px;
+        height: auto;
+        margin: auto;
+    }
+
+    .navbar {
+        flex-direction: row;
+        /* keep horizontal */
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .contact-icons {
+        gap: 15px;
     }
 }
 
