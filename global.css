@@ -1,4 +1,8 @@
-/* CONTENT */
+html, body {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+* CONTENT */
 .project-content {
     padding: 20px;
 }
