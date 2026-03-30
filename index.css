@@ -1,7 +1,3 @@
-html, body {
-    overscroll-behavior-y: none;
-}
-
 /* HERO */
 .hero {
     min-height: 100vh;
