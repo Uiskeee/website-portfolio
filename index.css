@@ -1,3 +1,9 @@
+html, body {
+    background-color: rgba(0, 0, 0, 0.55); 
+    margin: 0;
+    padding: 0;
+}
+
 /* HERO */
 .hero {
     min-height: 100vh;
