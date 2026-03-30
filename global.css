@@ -192,6 +192,10 @@ body {
     .projects {
         padding: 60px 40px;
     }
+
+        .hero h1 {
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 768px) {
