@@ -72,6 +72,50 @@
     z-index: 2;
 }
 
+/* HERO LAYOUT */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+/* LEFT SIDE */
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 3px solid rgba(255,255,255,0.2);
+}
+
 .btn {
     display: inline-block;
     margin-top: 30px;
@@ -160,7 +204,7 @@
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     margin-bottom: 40px;
 }
@@ -191,9 +235,8 @@
     margin-bottom: 6px;
 }
 
-/* make the link stick to bottom */
 .project-link {
-    margin-top: auto; /* pushes itself to bottom of flex column */
+    margin-top: auto;
     color: #00f5d4;
     text-decoration: none;
     font-weight: bold;
@@ -214,7 +257,7 @@
 
 /* MAKE SECTION WIDER */
 .experience-list {
-    max-width: 1100px; /* wider than before */
+    max-width: 1100px; 
     margin: auto;
 }
 
@@ -278,13 +321,13 @@
     transition: 0.3s;
 }
 
-/* LEFT SIDE (TEXT) */
+/* LEFT SIDE */
 .exp-main {
     flex: 1;
     padding: 30px 40px;
 }
 
-/* RIGHT SIDE (LOGO BLOCK) */
+/* RIGHT SIDE*/
 .exp-side {
     width: 220px; 
     min-height: 100%;
