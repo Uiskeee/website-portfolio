@@ -134,7 +134,10 @@
 
 /* PROJECT SECTION */
 .projects {
-    padding: 60px 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 
 .projects h2 {
@@ -246,7 +249,7 @@
 
 /* EXPERIENCE SECTION */
 .experience {
-    padding: 80px 80px;
+    padding: 20px 80px;
 }
 
 .experience h2 {
