@@ -205,7 +205,7 @@ body {
 
     /* HERO TEXT SMALLER */
     .hero h1 {
-        font-size: 2.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
     }
 
     .hero {
