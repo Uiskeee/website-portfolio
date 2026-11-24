@@ -121,7 +121,7 @@ html, body {
     display: inline-block;
     margin-top: 30px;
     padding: 12px 30px;
-    background: #049c25;
+    background: #00f5d4;
     color: #000;
     font-weight: bold;
     text-decoration: none;
@@ -246,7 +246,7 @@ html, body {
 
 .project-link {
     margin-top: auto;
-    color: #049c25;
+    color: #00f5d4;
     text-decoration: none;
     font-weight: bold;
     padding-top: 30px;

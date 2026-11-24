@@ -85,7 +85,7 @@ body {
 .logo {
     font-weight: bold;
     font-size: 1.25rem;
-    color: #049c25;
+    color: #00f5d4;
 }
 
 .navbar a {
@@ -156,7 +156,7 @@ body {
 }
 
 .team-member a {
-    color: #049c25;
+    color: #00f5d4;
     text-decoration: none;
     font-weight: 500;
 }
