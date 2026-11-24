@@ -161,6 +161,10 @@ body {
     font-weight: 500;
 }
 
+a:link {
+  color: #00f5d4;
+}
+
 
 .role {
     margin-left: 8px;
