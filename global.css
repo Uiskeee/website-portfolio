@@ -94,10 +94,6 @@ body {
     margin-left: 25px;
 }
 
-.navbar a:hover {
-    color: #049c25;
-}
-
 .contact-icons {
     display: flex;
     justify-content: center;
@@ -107,10 +103,6 @@ body {
 
 .contact-icons a {
     font-size: 1.5rem;
-}
-
-.contact-icons a:hover {
-    transform: scale(1.2);
 }
 
 .other-media {
@@ -169,9 +161,6 @@ body {
     font-weight: 500;
 }
 
-.team-member a:hover {
-    text-decoration: underline;
-}
 
 .role {
     margin-left: 8px;
